@@ -5,11 +5,11 @@ class CoachingController < ApplicationController
     # @answer = answer
     print params
     if @question == 'I am going to work'
-      @answer = "#{@question} Great!"
+      @answer = "Great!"
     elsif @question.include?('?')
-      @answer = "#{@question} Silly question, get dressed and go to work!"
+      @answer = "Silly question, get dressed and go to work!"
     else
-      @answer = "#{@question} I don't care, get dressed and go to work!"
+      @answer = "I don't care, get dressed and go to work!"
     end
   end
 
